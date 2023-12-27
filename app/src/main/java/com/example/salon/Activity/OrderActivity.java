@@ -129,6 +129,7 @@ public class OrderActivity extends  BaseActivity{
             mDatabase.child("Orders").child(Order.getID()).setValue(order);
             Toast.makeText(OrderActivity.this, "Order added successfully", Toast.LENGTH_SHORT).show();
 
+            this.managmentCart.clearCart();
     }
 }
 
