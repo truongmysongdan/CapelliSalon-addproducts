@@ -137,7 +137,7 @@ public class OrderActivity extends  BaseActivity{
     public void writeNewOrder(String ID , String name, String email, String phone, String address, String detail, String price) {
             Order order = new Order(ID, name, phone, email, address, price, detail);
 
-            mDatabase.child("Orders").child(uid).child(Order.getID()).setValue(order);
+            mDatabase.child("Orders").child(uid).child(order.getID()).setValue(order);
             Toast.makeText(OrderActivity.this, "Order added successfully", Toast.LENGTH_SHORT).show();
 
             this.managmentCart.clearCart();

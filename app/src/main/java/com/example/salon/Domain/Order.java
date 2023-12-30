@@ -74,7 +74,7 @@ public class Order {
         this.detail = detail;
     }
 
-    public static String getID() {
+    public  String getID() {
         return ID;
     }
 
