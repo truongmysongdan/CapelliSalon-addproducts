@@ -34,7 +34,7 @@
        android:background="@drawable/grey_background"
        android:padding="12dp"
        android:layout_marginEnd="6dp"
-       android:text=" Hair Collection"
+       android:text=" Color Hair Collection"
        android:layout_gravity="center">
 
    </TextView>
