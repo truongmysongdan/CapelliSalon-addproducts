@@ -63,9 +63,10 @@ public class HistoryActivity extends BaseActivity {
                     Order order = ds.getValue(Order.class);
                     order.setID(ds.getKey());
                     data.add(order);
-                }
 
+                }
                 adapter.notifyDataSetChanged();
+
 
             }
 
@@ -79,20 +80,6 @@ public class HistoryActivity extends BaseActivity {
         bottomNavigationView = findViewById(R.id.bnv_his);
         bottomNavigationView.setSelectedItemId(R.id.action_his);
         BottomNavigationView bottomNav = findViewById(R.id.bnv_his);
-
-
-        ImageView backBtn = findViewById(R.id.backBtn);
-
-        View.OnClickListener listenerBack = new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent();
-                intent.setClass(view.getContext(), HomeActivity.class);
-                startActivity(intent);
-            }
-        };
-
-        backBtn.setOnClickListener(listenerBack);
 
 
         bottomNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -122,4 +109,3 @@ public class HistoryActivity extends BaseActivity {
 
 
 }
-

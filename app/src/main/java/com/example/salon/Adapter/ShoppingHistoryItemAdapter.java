@@ -66,11 +66,10 @@ public class ShoppingHistoryItemAdapter extends RecyclerView.Adapter<ShoppingHis
 
         TextView idTextView = holder.idTextView;
         idTextView.setText(order.getID());
-        System.out.println(order.getID());
 
         TextView nameTextView = holder.nameTextView;
         nameTextView.setText(order.getName());
-        System.out.println(order.getName());
+
         TextView addressTextView = holder.addressTextView;
         addressTextView.setText(order.getAddress());
 

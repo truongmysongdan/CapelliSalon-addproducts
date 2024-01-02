@@ -3,7 +3,7 @@ package com.example.salon.Domain;
 import java.util.List;
 
 public class Order {
-    private static String ID;
+    private String ID;
     private String name;
     private String phone;
     private String email;
